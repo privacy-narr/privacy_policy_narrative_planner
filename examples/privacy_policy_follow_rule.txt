@@ -1,0 +1,15 @@
+clingo version 5.6.2
+Reading from ../cpocl.lp ...
+Solving...
+Answer: 1
+intends(start,saw(did_activity(follow,damien,barth),marissa),marissa) edge(start,end) edge(start,1) edge(start,2) edge(2,3) happens(2,action(retrieve,did_activity(follow,damien,barth),marissa),marissa) satisfies(2,intention(start,saw(did_activity(follow,damien,barth),marissa),marissa))
+Optimization: 5
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : 5
+Calls        : 1
+Time         : 0.013s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.014s
+Threads      : 4        (Winner: 3)
