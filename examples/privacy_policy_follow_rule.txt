@@ -1,16 +1,23 @@
-clingo version 5.5.2
+clingo version 5.6.2
 Reading from ../cpocl.lp ...
 Solving...
+Progression : [12;inf]
+Progression : [13;inf]
 Answer: 1
-edge(start,end) edge(start,1) edge(start,2) edge(2,3) happens(2,action(retrieve,did_activity(follow,damien,barth),marissa),marissa)
-Optimization: 5
-Progression : [5;5] (Error: 0)
+edge(1,end) edge(2,end) edge(3,end) edge(4,end) edge(5,end) edge(6,end) edge(7,end) edge(8,end) edge(10,end) edge(9,1) edge(start,2) edge(start,3) edge(start,4) edge(start,5) edge(start,6) edge(start,7) edge(start,8) edge(start,9) edge(9,10) happens(8,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(7,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(6,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(5,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(4,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(3,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(2,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(9,action(apply_policy,follow_list_retrieve_public,policy_writer),policy_writer) happens(1,action(retrieve,did_activity(follow,damien,barth),alyssa),alyssa) happens(10,action(retrieve,did_activity(follow,damien,barth),marissa),marissa)
+Optimization: 23
+Answer: 2
+edge(7,end) edge(9,end) edge(start,1) edge(start,2) edge(start,3) edge(start,4) edge(start,5) edge(start,6) edge(8,7) edge(start,8) edge(10,9) edge(start,10) happens(10,action(apply_policy,follow_list_retrieve_followers_only,policy_writer),policy_writer) happens(8,action(apply_policy,follow_list_retrieve_public,policy_writer),policy_writer) happens(7,action(retrieve,did_activity(follow,damien,barth),alyssa),alyssa) happens(9,action(retrieve,did_activity(follow,damien,barth),marissa),marissa)
+Optimization: 17
+Progression : [14;17] (Error: 0.214286)
+Progression : [15;17] (Error: 0.133333)
+Progression : [16;17] (Error: 0.0625)
 OPTIMUM FOUND
 
-Models       : 1
+Models       : 2
   Optimum    : yes
-Optimization : 5
+Optimization : 17
 Calls        : 1
-Time         : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time     : 0.008s
-Threads      : 4        (Winner: 3)
+Time         : 29.670s (Solving: 24.60s 1st Model: 0.14s Unsat: 24.46s)
+CPU Time     : 103.264s
+Threads      : 4        (Winner: 1)
