@@ -1,12 +1,14 @@
-clingo version 5.5.2
+clingo version 5.6.2
 Reading from ../cpocl.lp ...
 Solving...
+Progression : [12;inf]
+Progression : [13;inf]
 Answer: 1
 policy_applied(follow_retrieve_followersOnly) edge(start,end) edge(start,1) edge(start,2) edge(start,3)
 Optimization: 4
 OPTIMUM FOUND
 
-Models       : 1
+Models       : 2
   Optimum    : yes
 Optimization : 4
 Calls        : 1

@@ -1,4 +1,5 @@
 % User A can retrieve another User B's follows if A is following B
+mastermind.
 
 %%%%%%%%%%%%
 % ACTIVITY PUB OBJECTS
@@ -13,12 +14,7 @@ is_activity_pub_object(A, actor)
 %%%%%%%%%%%%
 % ACTIVITIES
 % Establish activities and how they work
-is_activity(follow, create).
-
-% actors cannot follow themself
-% :- did_activity(follow, A, B), A = B.
-% non-actors cannot follow or be followed
-% :- did_activity(follow, A, B), not actor(A); not actor(B).
+is_activity(follow).
 
 % END ACTIVITIES
 %%%%%%%%%%%%
@@ -72,7 +68,7 @@ is_following(tri, damien).
 :- is_following(alyssa, _).
 
 
-#const tmax=3.
+#const tmax=10.
 #show happens/3.
 #show edge/2.
 #show policy_applied/1.
