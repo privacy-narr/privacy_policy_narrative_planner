@@ -20,7 +20,7 @@ else
 fi
 
 echo
-clingo ../cpocl.lp privacy_policy_follow_rule.lp -t $CORES | tee privacy_policy_follow_rule.txt
+clingo ../cpocl.lp privacy_policy_follow_rule.lp -n 0 -t $CORES | tee privacy_policy_follow_rule.txt
 
 # Reverse the file to get the latest output. The output is the next line after "Optimization: XXX"
 OUTPUT=$(tac privacy_policy_follow_rule.txt | grep "Optimization:" -A 2 -m 1 | sed '2q;d')
